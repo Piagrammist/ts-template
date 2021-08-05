@@ -7,7 +7,8 @@
         "strict": true
     },
     "include": [
-        "src/ts/**/*.ts"
+        "src/ts/**/*.ts",
+        "src/ts/**/*.tsx"
     ],
     "exclude": [
         "node_modules"
