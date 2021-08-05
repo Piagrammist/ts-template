@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after  {
+  margin    : 0;
+  padding   : 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture {
+  display  : block;
+  max-width: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior          : auto   !important;
+    animation-duration       : 0.01ms !important;
+    transition-duration      : 0.01ms !important;
+    animation-iteration-count: 1      !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
