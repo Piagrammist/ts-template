@@ -1,3 +1,5 @@
+@use '../abstracts/mixins' as mix-ins;
+
 *,
 *::before,
 *::after  {
@@ -18,6 +20,20 @@ img,
 picture {
   display  : block;
   max-width: 100%;
+}
+
+input[type=range] {
+  @include mix-ins.clear;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  @include mix-ins.reset-appearance;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  @include mix-ins.reset-appearance;
+  cursor: pointer;
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -4,7 +4,21 @@
 }
 
 @mixin flex-center {
-  display        : flex;
-  align-items    : center;
-  justify-content: center;
+  display    : flex;
+  place-items: center;
+}
+
+@mixin reset-appearance {
+  -webkit-appearance: none;
+  -moz-appearance   : none;
+  appearance        : none;
+}
+
+@mixin clear {
+  border       : none;
+  outline      : none;
+  background   : none;
+  border-radius: 0;
+
+  @include reset-appearance;
 }
