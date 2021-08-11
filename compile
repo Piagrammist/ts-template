@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+TERMINAL="${TERM:-alacritty}"
+
+if ! [ "${BASH_SOURCE[0]}" -ef "$0" ]; then
+    echo "Error: you cannot source the script!"
+    exit 1
+fi
+
+# Checks if a command exists
+function _exists {
+    command -v "$1" >/dev/null 2>&1
+}
+
+if _exists 'sass'; then
+    $TERMINAL -e "cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && sass -w src/scss:public/css"
+else
+    echo "Error: sass compiler not found!"
+    EXIT_CODE=1
+fi
+
+if _exists 'tsc'; then
+    $TERMINAL -e "cd "$(dirname "${BASH_SOURCE[0]}")" &>/dev/null && tsc -w"
+else
+    echo "Error: typescript compiler (tsc) not found!"
+    EXIT_CODE=1
+fi
+
+exit ${EXIT_CODE:-0}

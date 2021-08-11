@@ -3,6 +3,7 @@
     "useTabs": false,
     "tabWidth": 4,
     "endOfLine": "lf",
+    "singleQuote": false,
     "arrowParens": "always",
     "trailingComma": "all",
     "jsxBracketSameLine": true,
@@ -11,16 +12,12 @@
 
     "overrides": [
         {
-            "files": ["*.html", "*.css", "*.scss", "*.less"],
-            "options": {
-                "tabWidth": 2
-            }
+            "files": "*.*",
+            "options": { "tabWidth": 4 }
         },
         {
-            "files": "*.json",
-            "options": {
-                "tabWidth": 4
-            }
+            "files": ["*.html", "*.css", "*.scss", "*.less"],
+            "options": { "tabWidth": 2 }
         }
     ]
 }
