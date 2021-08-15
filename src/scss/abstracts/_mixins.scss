@@ -4,14 +4,15 @@
 }
 
 @mixin flex-center {
-  display    : flex;
-  place-items: center;
+  display        : flex;
+  align-items    : center;
+  justify-content: center;
 }
 
 @mixin reset-appearance {
   -webkit-appearance: none;
-  -moz-appearance   : none;
-  appearance        : none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 @mixin clear {
@@ -21,4 +22,22 @@
   border-radius: 0;
 
   @include reset-appearance;
+}
+
+@mixin user-select($value) {
+  -webkit-user-select: $value;
+      -ms-user-select: $value;
+          user-select: $value;
+}
+
+@mixin overlay ($alpha) {
+  top     : 0;
+  left    : 0;
+  right   : 0;
+  bottom  : 0;
+  z-index : 101;
+  position: fixed;
+
+  opacity         : $alpha;
+  background-color: #000;
 }

@@ -1,14 +1,57 @@
 {
     "compilerOptions": {
-        "target": "ES6",
-        "module": "ES6",
-        "outDir": "public/js",
-        "sourceMap": true,
-        "strict": true
+        // Type Checking
+        "allowUnreachableCode"              : false,
+        "allowUnusedLabels"                 : false,
+        "alwaysStrict"                      : true,    // strict
+        "exactOptionalPropertyTypes"        : true,
+        "noFallthroughCasesInSwitch"        : false,
+        "noImplicitAny"                     : false,   // strict
+        "noImplicitOverride"                : true,
+        "noImplicitReturns"                 : false,
+        "noImplicitThis"                    : true,    // strict
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess"          : true,
+        "noUnusedLocals"                    : true,
+        "noUnusedParameters"                : true,
+        "strict"                            : false,
+        "strictBindCallApply"               : true,    // strict
+        "strictFunctionTypes"               : true,    // strict
+        "strictNullChecks"                  : true,    // strict
+        "strictPropertyInitialization"      : true,    // strict
+        "useUnknownInCatchVariables"        : true,    // strict
+        
+        // Modules
+        "baseUrl"          : ".",
+        "module"           : "CommonJS",
+        "resolveJsonModule": true,
+        
+        // Emit
+        "newLine"           : "lf",
+        "noEmitOnError"     : true,
+        "outDir"            : "public/js",
+        "preserveConstEnums": false,
+        "removeComments"    : true,
+        "sourceMap"         : false,
+
+        // JavaScript Support
+        "allowJs": true,
+        "checkJs": true,
+
+        // Interop Constraints
+        "esModuleInterop"                 : true,
+        "forceConsistentCasingInFileNames": true,
+
+        // Language and Environment
+        "target": "ES2021",
+
+        // Output Formatting
+        "noErrorTruncation": true
     },
     "include": [
         "src/ts/**/*.ts",
-        "src/ts/**/*.tsx"
+        "src/ts/**/*.tsx",
+        "src/ts/**/*.d.ts"
     ],
     "exclude": [
         "node_modules"
