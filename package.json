@@ -1,0 +1,16 @@
+{
+    "name": "",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "build-ts": "tsc -w",
+        "build-sass": "sass -w src/scss:public/css"
+    },
+    "keywords": [],
+    "author": "Piagrammist",
+    "license": "MIT",
+    "devDependencies": {
+        "typescript": "*",
+        "sass": "*"
+    }
+}
