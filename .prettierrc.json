@@ -3,7 +3,7 @@
     "useTabs": false,
     "tabWidth": 4,
     "endOfLine": "lf",
-    "singleQuote": false,
+    "singleQuote": true,
     "arrowParens": "always",
     "trailingComma": "all",
     "jsxBracketSameLine": true,
