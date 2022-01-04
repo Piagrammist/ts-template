@@ -30,7 +30,7 @@
           user-select: $value;
 }
 
-@mixin overlay ($alpha) {
+@mixin overlay($alpha) {
   top     : 0;
   left    : 0;
   right   : 0;

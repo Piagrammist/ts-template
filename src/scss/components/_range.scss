@@ -1,0 +1,14 @@
+@use '../abstracts/mixins' as mixin;
+
+
+input[type="range"].rng {
+  @include mixin.clear;
+}
+
+@mixin thumb {
+  @include mixin.reset-appearance;
+  cursor: pointer;
+}
+input[type="range"].rng::-ms-thumb            { @include thumb; }
+input[type="range"].rng::-moz-range-thumb     { @include thumb; }
+input[type="range"].rng::-webkit-slider-thumb { @include thumb; }

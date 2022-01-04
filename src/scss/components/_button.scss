@@ -1,7 +1,7 @@
-@use '../abstracts/mixins' as mix-ins;
+@use '../abstracts/mixins' as mixin;
 
 .btn {
-  @include mix-ins.clear;
+  @include mixin.clear;
 
   cursor   : pointer;
   margin   : 5px;
