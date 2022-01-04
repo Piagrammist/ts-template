@@ -1,4 +1,4 @@
-@use '../abstracts/mixins' as mixin;
+@use '../abstracts/mixin' as mixin;
 
 .btn {
   @include mixin.clear;
