@@ -3,8 +3,8 @@
     "version": "0.1.0",
     "description": "",
     "scripts": {
-        "build-ts": "tsc -w",
-        "build-sass": "sass -w src/scss:public/css"
+        "watch-ts": "tsc -w",
+        "watch-sass": "sass -w src/scss:public"
     },
     "keywords": [],
     "author": "Piagrammist",

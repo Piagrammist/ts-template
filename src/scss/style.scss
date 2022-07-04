@@ -1,5 +1,5 @@
-@use './base';
-@use './layouts';
-@use './abstracts'  as abs;
-@use './utilities'  as util;
-@use './components' as comp;
+@use './base'             ;
+@use './layout'           ;
+@use './utility'   as util;
+@use './abstract'  as abs ;
+@use './component' as comp;
